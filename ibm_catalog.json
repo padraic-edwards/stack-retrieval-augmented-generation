@@ -1,8 +1,8 @@
 {
 	"products": [
 		{
-			"label": "Retrieval Augmented Generation Pattern",
-			"name": "Retrieval_Augmented_Generation_Pattern",
+			"label": "ALM Trial Pattern",
+			"name": "ALM_Trial_Pattern",
 			"version": "0.1.0-dev",
 			"product_kind": "solution",
 			"tags": [
@@ -89,55 +89,11 @@
 							"service_name": "iam-identity"
 						},
 						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::serviceRole:Writer",
-								"crn:v1:bluemix:public:iam::::role:Administrator"
-							],
-							"service_name": "atracker"
-						},
-						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::serviceRole:Manager",
-								"crn:v1:bluemix:public:iam::::role:Editor"
-							],
-							"service_name": "kms"
-						},
-						{
 							"service_name": "compliance",
 							"role_crns": [
 								"crn:v1:bluemix:public:iam::::serviceRole:Manager",
 								"crn:v1:bluemix:public:iam::::role:Editor"
 							]
-						},
-						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Editor"
-							],
-							"service_name": "pm-20"
-						},
-						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Editor"
-							],
-							"service_name": "data-science-experience"
-						},
-						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Editor"
-							],
-							"service_name": "aiopenscale"
-						},
-						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Editor"
-							],
-							"service_name": "conversation"
-						},
-						{
-							"role_crns": [
-								"crn:v1:bluemix:public:iam::::role:Editor"
-							],
-							"service_name": "discovery"
 						}
 					],
 					"architecture": {
@@ -145,10 +101,6 @@
 							{
 								"title": "Retrieval Augmented Generation sample pattern",
 								"description": "Deploy a banking retrieval augmented generation (RAG) sample application to IBM Cloud Code Engine using Continous Delivery."
-							},
-							{
-								"title": "Ensure Observability",
-								"description": "The architecture provides observability by deploying services such as IBM Log Analysis, IBM Monitoring, IBM Activity Tracker, and log retention through Cloud Object Storage buckets."
 							},
 							{
 								"title": "Implement Security",
@@ -236,12 +188,6 @@
 							"required": false
 						},
 						{
-							"key": "watsonx_admin_api_key",
-							"type": "password",
-							"description": "The API key used to provision the watson project resources. If not set, the API key used to deploy the solution is used.",
-							"required": false
-						},
-						{
 							"key": "secret_manager_service_plan",
 							"type": "string",
 							"default_value": "trial",
@@ -266,36 +212,17 @@
 							"required": false
 						},
 						{
-							"key": "enable_platform_logs_metrics",
-							"type": "boolean",
-							"default_value": false,
-							"description": "Whether to provision logging and monitoring instances are configured to receive all platform logs and metrics in the target region. There can only be one instance per region provisioned for platform logs/metrics.",
-							"required": false
-						},
-						{
 							"key": "sample_app_git_url",
 							"type": "string",
-							"default_value": "https://github.com/IBM/gen-ai-rag-watsonx-sample-application",
-							"description": "The URL to the public git repository containing the sample rag application code.",
+							"default_value": "https://github.com/open-toolchain/hello-compliance-app",
+							"description": "The URL to the public git repository containing the sample compliance application code.",
 							"required": false
 						}
 					],
 					"outputs": [
 						{
-							"key": "watsonx_project_url",
+							"key": "compliance-ci-url",
 							"description": "The URL to the WatsonX project for the sample RAG application."
-						},
-						{
-							"key": "watsonx_project_id",
-							"description": "The ID for the WatsonX project for the sample RAG application."
-						},
-						{
-							"key": "watson_discovery_api_url",
-							"description": "The URL to the Watson Discovery API endpoint."
-						},
-						{
-							"key": "watson_discovery_project_id",
-							"description": "The ID for the Watson Discovery project for the sample RAG application."
 						}
 					],
 					"install_type": "fullstack"
