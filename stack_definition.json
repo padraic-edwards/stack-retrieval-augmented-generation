@@ -8,6 +8,13 @@
       "default": "alm"
     },
     {
+      "name": "region",
+      "required": true,
+      "type": "string",
+      "hidden": false,
+      "default": "us-south"
+    },
+    {
       "name": "secret_manager_service_plan",
       "required": false,
       "type": "string",
@@ -19,13 +26,6 @@
       "required": false,
       "type": "string",
       "hidden": false
-    },
-    {
-      "name": "region",
-      "required": false,
-      "type": "string",
-      "hidden": false,
-      "default": "us-south"
     },
     {
       "name": "sample_app_git_url",
@@ -47,12 +47,26 @@
       "type": "string",
       "hidden": false,
       "default": null
+    },
+    {
+      "name": "existing_resource_group",
+      "required": false,
+      "type": "string",
+      "hidden": false,
+      "default": null
+    },
+    {
+      "name": "toolchain_name",
+      "required": false,
+      "type": "string",
+      "hidden": false,
+      "default": "DevSecOps ALM"
     }
   ],
   "members": [
     {
       "name": "1 - Application Lifecycle Management Infra",
-      "version_locator": "823fc106-60db-41df-96cc-b84703382b47.e0deef1d-ff63-4262-9aae-2e9b20f7ab19",
+      "version_locator": "823fc106-60db-41df-96cc-b84703382b47.eb6f986a-f243-400f-bc98-4fe2bd52a83a",
       "inputs": [
         {
           "name": "prefix",
@@ -67,12 +81,16 @@
           "value": "ref:../../inputs/region"
         },
         {
-          "name": "resource_group",
-          "value": "ref:../../inputs/resource_group_name"
-        },
-        {
           "name": "add_container_name_suffix",
           "value": true
+        },
+        {
+          "name": "existing_resource_group",
+          "value": "ref:../../inputs/existing_resource_group"
+        },
+        {
+          "name": "sm_instance_id",
+          "value": "ref:../../inputs/existing_secrets_manager_crn"
         }
       ]
     },
@@ -86,7 +104,7 @@
         },
         {
           "name": "toolchain_name",
-          "value": "ALM Sample App"
+          "value": "ref:../../inputs/toolchain_name"
         },
         {
           "name": "toolchain_region",
@@ -133,8 +151,16 @@
   ],
   "outputs": [
     {
-      "name": "watsonx_project_url",
-      "value": "ref:./members/2 - Sample RAG app configuration/outputs/watsonx_project_url"
+      "name": "compliance-ci-toolchain",
+      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_ci_toolchain"
+    },
+    {
+      "name": "compliance-cd-toolchain",
+      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_cc_toolchain"
+    },
+    {
+      "name": "compliance-cd-toolchain",
+      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_cd_toolchain"
     }
   ]
 }
