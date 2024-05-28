@@ -131,13 +131,6 @@
 					},
 					"configuration": [
 						{
-							"key": "prefix",
-							"type": "string",
-							"description": "A prefix added to the name of all resources created by this solution. Used to avoid name clashes in the target account when existing this solution multiple times.",
-							"default_value": "rag",
-							"required": true
-						},
-						{
 							"key": "ibmcloud_api_key",
 							"type": "password",
 							"description": "The API Key used to provision all resources created in this solution.",
@@ -161,7 +154,7 @@
 							"type": "string",
 							"default_value": "us-south",
 							"description": "The region in which all resources are deployed.",
-							"required": false,
+							"required": true,
 							"options": [
 								{
 									"displayname": "us-south",

@@ -1,13 +1,6 @@
 {
   "inputs": [
     {
-      "name": "prefix",
-      "required": true,
-      "type": "string",
-      "hidden": false,
-      "default": "alm"
-    },
-    {
       "name": "region",
       "required": true,
       "type": "string",
