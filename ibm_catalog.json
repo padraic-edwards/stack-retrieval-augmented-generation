@@ -3,7 +3,7 @@
 		{
 			"label": "ALM Trial Pattern",
 			"name": "ALM_Trial_Pattern",
-			"version": "0.0.1-dev",
+			"version": "0.0.2-dev",
 			"product_kind": "solution",
 			"tags": [
 				"enterprise_app"
