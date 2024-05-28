@@ -66,12 +66,8 @@
   "members": [
     {
       "name": "1 - Application Lifecycle Management Infra",
-      "version_locator": "823fc106-60db-41df-96cc-b84703382b47.eb6f986a-f243-400f-bc98-4fe2bd52a83a",
+      "version_locator": "823fc106-60db-41df-96cc-b84703382b47.61c1987d-9164-452f-bcaf-bfb856279bb9",
       "inputs": [
-        {
-          "name": "prefix",
-          "value": "ref:../../inputs/prefix"
-        },
         {
           "name": "ibmcloud_api_key",
           "value": ""
@@ -83,10 +79,6 @@
         {
           "name": "add_container_name_suffix",
           "value": true
-        },
-        {
-          "name": "existing_resource_group",
-          "value": "ref:../../inputs/existing_resource_group"
         },
         {
           "name": "sm_instance_id",
