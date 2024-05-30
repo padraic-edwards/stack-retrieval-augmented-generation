@@ -84,15 +84,15 @@
   "outputs": [
     {
       "name": "compliance-ci-toolchain",
-      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_ci_toolchain"
+      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_ci_toolchain_url"
     },
     {
       "name": "compliance-cd-toolchain",
-      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_cd_toolchain"
+      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_cd_toolchain_url"
     },
     {
       "name": "compliance-cc-toolchain",
-      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_cc_toolchain"
+      "value": "ref:./members/2 - Application Lifecycle Management/outputs/compliance_cc_toolchain_url"
     }
   ]
 }
