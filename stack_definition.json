@@ -8,33 +8,6 @@
       "default": "us-south"
     },
     {
-      "name": "secret_manager_service_plan",
-      "required": false,
-      "type": "string",
-      "hidden": false,
-      "default": "trial"
-    },
-    {
-      "name": "resource_group_name",
-      "required": false,
-      "type": "string",
-      "hidden": false
-    },
-    {
-      "name": "signing_key",
-      "required": false,
-      "type": "password",
-      "hidden": false,
-      "default": ""
-    },
-    {
-      "name": "existing_resource_group",
-      "required": false,
-      "type": "string",
-      "hidden": false,
-      "default": null
-    },
-    {
       "name": "prefix",
       "required": false,
       "type": "string",

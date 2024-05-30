@@ -107,55 +107,11 @@
 							"required": true
 						},
 						{
-							"key": "signing_key",
-							"type": "password",
-							"description": "The key used to sign the application image built by the CI pipeline deployed in this solution; please refer to the documentation at https://github.com/terraform-ibm-modules/stack-retrieval-augmented-generation/blob/main/README.md for generating the key; if not set, all resources will deploy successfully, but the initial CI pipeline execution will fail at the signing step.",
-							"display_name": "Multiline secure value",
-							"default_value": "replace",
-							"required": false,
-							"custom_config": {
-								"type": "multiline_secure_value",
-								"grouping": "deployment",
-								"original_grouping": "deployment"
-							}
-						},
-						{
 							"key": "region",
 							"type": "string",
 							"default_value": "us-south",
 							"description": "The region in which all resources are deployed.",
 							"required": true
-						},
-						{
-							"key": "resource_group_name",
-							"type": "string",
-							"default_value": "rag-services",
-							"description": "The name of the resource group that is created by this solution. The actual name is prefixed with the value of the input 'prefix'.  All resources created by this solution are deployed in this resource group. ",
-							"required": false
-						},
-						{
-							"key": "existing_resource_group",
-							"type": "string",
-							"default_value": "rag-services",
-							"description": "The name of the resource group that is created by this solution. The actual name is prefixed with the value of the input 'prefix'.  All resources created by this solution are deployed in this resource group. ",
-							"required": false
-						},
-						{
-							"key": "secret_manager_service_plan",
-							"type": "string",
-							"default_value": "trial",
-							"description": "The service/pricing plan to use when provisioning a new Secrets Manager instance. Only one trial instance is allowed per account.",
-							"required": false,
-							"options": [
-								{
-									"displayname": "Trial",
-									"value": "trial"
-								},
-								{
-									"displayname": "Standard",
-									"value": "standard"
-								}
-							]
 						},
 						{
 							"key": "prefix",
