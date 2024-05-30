@@ -21,25 +21,11 @@
       "hidden": false
     },
     {
-      "name": "sample_app_git_url",
-      "required": false,
-      "type": "string",
-      "hidden": false,
-      "default": "https://github.com/"
-    },
-    {
       "name": "signing_key",
       "required": false,
       "type": "password",
       "hidden": false,
-      "default": "replace"
-    },
-    {
-      "name": "existing_secrets_manager_crn",
-      "required": false,
-      "type": "string",
-      "hidden": false,
-      "default": null
+      "default": ""
     },
     {
       "name": "existing_resource_group",
@@ -75,14 +61,6 @@
         {
           "name": "region",
           "value": "ref:../../inputs/region"
-        },
-        {
-          "name": "add_container_name_suffix",
-          "value": true
-        },
-        {
-          "name": "sm_instance_id",
-          "value": "ref:../../inputs/existing_secrets_manager_crn"
         }
       ]
     },
@@ -127,16 +105,8 @@
           "value": "ref:../1 - Application Lifecycle Management Infra/outputs/registry_namespace"
         },
         {
-          "name": "ci_app_repo_clone_from_url",
-          "value": "ref:../../inputs/sample_app_git_url"
-        },
-        {
           "name": "repositories_prefix",
           "value": "ref:../../inputs/prefix"
-        },
-        {
-          "name": "ci_app_name",
-          "value": "alm-sample-app"
         }
       ]
     }
