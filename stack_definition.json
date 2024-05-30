@@ -71,7 +71,7 @@
         },
         {
           "name": "toolchain_resource_group",
-          "value": "ref:..//outputs/resource_group_name"
+          "value": "ref:../1 - Infrastructure for Application Lifecycle Management/outputs/resource_group_name"
         },
         {
           "name": "sm_secret_group",
