@@ -54,6 +54,13 @@
       "type": "string",
       "hidden": false,
       "default": "DevSecOps ALM"
+    },
+    {
+      "name": "prefix",
+      "required": false,
+      "type": "string",
+      "hidden": false,
+      "default": "ALM"
     }
   ],
   "members": [
@@ -97,7 +104,7 @@
         },
         {
           "name": "toolchain_resource_group",
-          "value": "ref:../1 - Application Lifecycle Management Infra/outputs/devops_resource_group_name"
+          "value": "ref:../1 - Application Lifecycle Management Infra/outputs/resource_group_name"
         },
         {
           "name": "sm_secret_group",
