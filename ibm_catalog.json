@@ -3,7 +3,7 @@
 		{
 			"label": "ALM Demo",
 			"name": "ALM_Demo_Stack",
-			"version": "0.0.5-dev",
+			"version": "0.0.6-dev",
 			"product_kind": "solution",
 			"tags": [
 				"enterprise_app"
