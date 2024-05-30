@@ -35,13 +35,6 @@
       "default": null
     },
     {
-      "name": "toolchain_name",
-      "required": false,
-      "type": "string",
-      "hidden": false,
-      "default": "DevSecOps ALM"
-    },
-    {
       "name": "prefix",
       "required": false,
       "type": "string",
