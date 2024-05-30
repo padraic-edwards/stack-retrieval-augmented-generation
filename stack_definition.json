@@ -13,6 +13,13 @@
       "type": "string",
       "hidden": false,
       "default": "ALM"
+    },
+    {
+      "name": "Application Repositories",
+      "required": false,
+      "type": "json",
+      "hidden": false,
+      "default": "ALM"
     }
   ],
   "members": [
