@@ -1,9 +1,9 @@
 {
 	"products": [
 		{
-			"label": "ALM Demo",
-			"name": "ALM_Demo_Stack",
-			"version": "0.0.8-dev",
+			"label": "ALM Demo v1",
+			"name": "ALM_Demo_Stack_v1",
+			"version": "0.0.9-dev",
 			"product_kind": "solution",
 			"tags": [
 				"enterprise_app"
@@ -137,9 +137,16 @@
 						},
 						{
 							"key": "Application Repository",
-							"type": "string",
-							"default_value": "alm",
-							"description": "Default prefix for repos and resources",
+							"type": "JSON",
+							"default_value": "",
+							"description": "List of repositories to use. Tool integrations and triggers will be generated.",
+							"required": false
+						},
+						{
+							"key": "Pipeline Environment Properties",
+							"type": "JSON",
+							"default_value": "[]",
+							"description": "Additonal environment properties to add to DevSecOps pipelines",
 							"required": false
 						}
 					],
