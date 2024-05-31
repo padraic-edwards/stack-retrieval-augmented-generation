@@ -51,7 +51,7 @@
         },
         {
           "name": "resource_group",
-          "value": "ref:../../inputs/region"
+          "value": "ref:../../inputs/prefix"
         }
       ]
     },
