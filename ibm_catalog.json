@@ -131,7 +131,7 @@
 						{
 							"key": "prefix",
 							"type": "string",
-							"default_value": "alm",
+							"default_value": "devsecops",
 							"description": "Default prefix for repos and resources",
 							"required": false
 						},

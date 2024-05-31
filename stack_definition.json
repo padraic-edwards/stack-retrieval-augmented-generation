@@ -12,7 +12,7 @@
       "required": false,
       "type": "string",
       "hidden": false,
-      "default": "ALM"
+      "default": "devsecops"
     },
     {
       "name": "Application Repositories",
@@ -47,6 +47,10 @@
         },
         {
           "name": "region",
+          "value": "ref:../../inputs/region"
+        },
+        {
+          "name": "resource_group",
           "value": "ref:../../inputs/region"
         }
       ]
